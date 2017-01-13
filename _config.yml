@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Charles (Chad) Wigington's personal page"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Charles (Chad) Wigington"
+description              : "This is the home website to act as a portfolio as well as a blog (at times)."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -77,11 +77,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Charles Wigington"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "I am a bioinformatics phd student and a dad."
+  location         : "Atlanta, GA"
+  email            : "charles.h.wigington@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
