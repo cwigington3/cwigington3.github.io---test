@@ -2,15 +2,19 @@
 
 - title: About
   url: /about/
+  url: https://cwigington3.github.io/about/
 
 - title: Articles
   url: /articles/
+  url: https://cwigington3.github.io/articles/
 
 - title: Blog
   url: /blog/
+  url: https://cwigington3.github.io/blog/
 
 #- title: Theme Setup
 #  url: /theme-setup/
 
 - title: Search
   url: /search/
+  url: https://cwigington3.github.io/search/

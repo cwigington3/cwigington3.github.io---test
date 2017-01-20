@@ -6,6 +6,7 @@ description: work portfolio.
 #logo: chw.png
 search: true
 url: cwigington3.github.io
+url: http://localhost:4000
 
 # Jekyll configuration
 
@@ -38,7 +39,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 owner:
   name: Charles (Chad) Wigington
   avatar: bio-photo.jpg
-  email: you@email.com
+  email: cwigington3@gatech.edu
   disqus-shortname:
   twitter: #username
   facebook: #username

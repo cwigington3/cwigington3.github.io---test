@@ -6,6 +6,7 @@ modified: 2014-08-08T19:44:38.564948-04:00
 image:
   feature: IMG_0991.JPG
   credit: CHW
+url: https://cwigington3.github.io/about
 ---
 
 My name is **Charles Wigington** and I am trying to create a portfolio for some of my work.
