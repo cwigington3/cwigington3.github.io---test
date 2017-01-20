@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Site navigation links
 
 <<<<<<< HEAD
@@ -25,3 +26,17 @@
   url: /search/
   url: https://cwigington3.github.io/search/
 >>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
+=======
+# main links
+main:
+  #- title: "Quick-Start Guide"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About"
+    url: https://github.com/cwigington3/cwigington3.github.io/blob/master/about
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+>>>>>>> 74dfacfe396734da2355a3321b7cbc0b40af2d69

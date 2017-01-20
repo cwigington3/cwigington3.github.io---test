@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 sitemap: false
 ---
 
@@ -13,10 +14,31 @@ sitemap: false
 
 @import "variables";
 
+=======
+---
+
+/*
+ *    Minimal Mistakes Jekyll Theme
+ *
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
+ *
+*/
+
+/*
+   Variables
+   ========================================================================== */
+
+@import "variables";
+
+
+>>>>>>> 74dfacfe396734da2355a3321b7cbc0b40af2d69
 /*
    Vendor
    ========================================================================== */
 
+<<<<<<< HEAD
 @import "vendor/bourbon/bourbon"; /* Bourbon mixins (bourbon.io) */
 @import "grid-settings"; /* Bourbon Neat settings */
 @import "vendor/neat/neat"; /* Bourbon Neat grid mixins (neat.bourbon.io) */
@@ -25,11 +47,45 @@ sitemap: false
 
 /*
    Global
+=======
+/* Breakpoint - media query mixins */
+@import "vendor/breakpoint/breakpoint";
+@include breakpoint-set("to ems", true);
+
+/* Font Awesome - icon font set */
+@import "vendor/font-awesome/font-awesome";
+
+/* Magnific Popup - responsive lightbox */
+@import "vendor/magnific-popup/magnific-popup"; // Magnific Popup
+
+/* Susy - grid mixins */
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: $large,
+  global-box-sizing: border-box,
+  // debug: (
+  //   image: show,
+  //   color: blue,
+  //   output: overlay,
+  //   toggle: top right,
+  // ),
+);
+@import "vendor/susy/susy";
+
+
+/*
+   Base
+>>>>>>> 74dfacfe396734da2355a3321b7cbc0b40af2d69
    ========================================================================== */
 
 @import "mixins";
 @import "reset";
 @import "base";
+<<<<<<< HEAD
 
 /*
    Components
@@ -53,3 +109,25 @@ sitemap: false
 
 @import "page"; /* layout and styles that apply to posts and pages */
 @import "archives"; /* archive pages (post/tag lists, etc) */
+=======
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
+@import "forms";
+
+
+/*
+   Layout specific
+   ========================================================================== */
+
+@import "page";
+@import "archive";
+@import "sidebar";
+@import "print";
+>>>>>>> 74dfacfe396734da2355a3321b7cbc0b40af2d69

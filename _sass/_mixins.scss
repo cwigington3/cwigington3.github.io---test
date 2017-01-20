@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // UTILITY MIXINS
 // --------------------------------------------------
@@ -287,3 +288,58 @@ margin : -1px;
 padding : 0; 
 border : 0; }
 >>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
+=======
+/* ==========================================================================
+   MIXINS
+   ========================================================================== */
+
+%tab-focus {
+  /* Default*/
+  outline: thin dotted $warning-color;
+  /* Webkit*/
+  outline: 5px auto $warning-color;
+  outline-offset: -2px;
+}
+
+/*
+   em function
+   ========================================================================== */
+
+@function em($target, $context: $doc-font-size) {
+  @return ($target / $context) * 1em;
+}
+
+
+/*
+   Bourbon clearfix
+   ========================================================================== */
+
+/*
+  * Provides an easy way to include a clearfix for containing floats.
+  * link http://cssmojo.com/latest_new_clearfix_so_far/
+  *
+  * example scss - Usage
+  *
+  * .element {
+  *   @include clearfix;
+  * }
+  *
+  * example css - CSS Output
+  *
+  * .element::after {
+  *   clear: both;
+  *   content: "";
+  *   display: table;
+  * }
+*/
+
+@mixin clearfix {
+  clear: both;
+
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+>>>>>>> 74dfacfe396734da2355a3321b7cbc0b40af2d69

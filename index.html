@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 layout: page
 title: Latest Posts
 excerpt: "A simple and clean responsive Jekyll theme for words and photos."
@@ -10,3 +11,8 @@ search_omit: true
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
+=======
+layout: home
+author_profile: true
+---
+>>>>>>> 74dfacfe396734da2355a3321b7cbc0b40af2d69
