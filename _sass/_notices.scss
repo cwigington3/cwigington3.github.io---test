@@ -3,6 +3,7 @@
    ========================================================================== */
 
 /*
+<<<<<<< HEAD
    Default notice .notice
    ========================================================================== */
 
@@ -65,6 +66,19 @@
 
 .notice-danger {
 	@include notice($danger-color);
+=======
+   Default notice
+   ========================================================================== */
+
+.notice {
+  margin-top: 1.5em;
+  padding: .5em 1em;
+  text-indent: 0;
+  @include font-size(16);
+  background-color: lighten($black, 95);
+  border: 1px solid lighten($black, 90);
+  @include rounded(4px);
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }
 
 /*
@@ -72,8 +86,13 @@
    ========================================================================== */
 
 .upgrade {
+<<<<<<< HEAD
   text-align: center;
   a {
     text-decoration: none;
   }
+=======
+  padding: 10px;
+  text-align: center;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }

@@ -4,6 +4,9 @@ _site
 *.sublime-workspace
 codekit-config.json
 node_modules
+<<<<<<< HEAD
 _asset_bundler_cache
+=======
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 .sass-cache
 .jekyll-metadata

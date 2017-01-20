@@ -2,13 +2,17 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+<<<<<<< HEAD
     pkg: grunt.file.readJSON('package.json'),
+=======
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
     jshint: {
       options: {
         jshintrc: '.jshintrc'
       },
       all: [
         'Gruntfile.js',
+<<<<<<< HEAD
         'js/*.js',
         '!js/main.js'
       ]
@@ -36,10 +40,24 @@ module.exports = function(grunt) {
           'js/main.js': [
             'js/plugins/*.js',
             'js/_*.js'
+=======
+        'assets/js/*.js',
+        'assets/js/plugins/*.js',
+        '!assets/js/scripts.min.js'
+      ]
+    },
+    uglify: {
+      dist: {
+        files: {
+          'assets/js/scripts.min.js': [
+            'assets/js/plugins/*.js',
+            'assets/js/_*.js'
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
           ]
         }
       }
     },
+<<<<<<< HEAD
     surround: {
       src: 'js/main.js',
       options: {
@@ -47,6 +65,8 @@ module.exports = function(grunt) {
         prepend: '---\n---',
       },
     },
+=======
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
     imagemin: {
       dist: {
         options: {
@@ -61,6 +81,7 @@ module.exports = function(grunt) {
         }]
       }
     },
+<<<<<<< HEAD
     imgcompress: {
       dist: {
         options: {
@@ -75,6 +96,8 @@ module.exports = function(grunt) {
         }]
       }
     },
+=======
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
     svgmin: {
       dist: {
         files: [{
@@ -85,6 +108,7 @@ module.exports = function(grunt) {
         }]
       }
     },
+<<<<<<< HEAD
   });
 
   // Load tasks
@@ -101,3 +125,40 @@ module.exports = function(grunt) {
   grunt.registerTask('scripts', ['watch', 'uglify']);
   grunt.registerTask('images', ['newer:imgcompress', 'newer:svgmin']);
 };
+=======
+    watch: {
+      js: {
+        files: [
+          '<%= jshint.all %>'
+        ],
+        tasks: ['uglify']
+      }
+    },
+    clean: {
+      dist: [
+        'assets/js/scripts.min.js'
+      ]
+    }
+  });
+
+  // Load tasks
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-svgmin');
+
+  // Register tasks
+  grunt.registerTask('default', [
+    'clean',
+    'uglify',
+    'imagemin',
+    'svgmin'
+  ]);
+  grunt.registerTask('dev', [
+    'watch'
+  ]);
+
+};
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525

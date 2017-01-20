@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ==========================================================================
    Style resets
    Adapted from http://github.com/necolas/normalize.css
@@ -6,6 +7,15 @@
 // Apply a natural box layout model to all elements
 *, *:before, *:after {
 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+=======
+// STYLE RESETS
+// Adapted from http://github.com/necolas/normalize.css
+// --------------------------------------------------
+
+// Apply a natural box layout model to all elements
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
  }
 
 // Remove margin
@@ -22,25 +32,40 @@ header,
 hgroup,
 nav,
 section {
+<<<<<<< HEAD
 	display: block;
+=======
+  display: block;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }
 
 // Display block in IE6-9 and FF3
 audio,
 canvas,
 video {
+<<<<<<< HEAD
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
+=======
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }
 
 // Prevents modern browsers from displaying 'audio' without controls
 audio:not([controls]) {
+<<<<<<< HEAD
 	display: none;
+=======
+  display: none;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }
 
 // Base font settings
 html {
+<<<<<<< HEAD
 	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -48,17 +73,31 @@ html {
 // Apply focus state
 a:focus {
 	@extend %tab-focus;
+=======
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+// Apply focus state
+a:focus {
+  @extend %tab-focus;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }
 
 // Remove outline
 a:hover,
 a:active {
+<<<<<<< HEAD
 	outline: 0;
+=======
+  outline: 0;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }
 
 // Prevent sub and sup affecting line-height in all browsers
 sub,
 sup {
+<<<<<<< HEAD
 	position: relative;
 	font-size: 75%;
 	line-height: 0;
@@ -69,15 +108,32 @@ sup {
 }
 sub {
 	bottom: -0.25em;
+=======
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }
 
 // Normalize blockquotes
 blockquote {
+<<<<<<< HEAD
 	margin: 0;
+=======
+  margin: 0;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }
 
 // Img border in a's and image quality
 img {
+<<<<<<< HEAD
 	// Responsive images (ensure images don't scale beyond their parents)
 	max-width: 100%; // Part 1: Set a maximum relative to the parent
 	width: auto\9; // IE7-8 need help adjusting responsive images
@@ -86,12 +142,26 @@ img {
 	vertical-align: middle;
 	border: 0;
 	-ms-interpolation-mode: bicubic;
+=======
+  // Responsive images (ensure images don't scale beyond their parents)
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  width: auto\9; // IE7-8 need help adjusting responsive images
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }
 
 // Prevent max-width from affecting Google Maps
 #map_canvas img,
 .google-maps img {
+<<<<<<< HEAD
 	max-width: none;
+=======
+  max-width: none;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }
 
 // Consistent form font size in all browsers, margin changes, misc
@@ -99,6 +169,7 @@ button,
 input,
 select,
 textarea {
+<<<<<<< HEAD
 	margin: 0;
 	font-size: 100%;
 	vertical-align: middle;
@@ -113,13 +184,39 @@ input::-moz-focus-inner { // Inner padding and border oddities in FF3/4
 	padding: 0;
 	border: 0;
 }
+=======
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+button,
+input {
+  *overflow: visible; // Inner spacing ie IE6/7
+  line-height: normal; // FF3/4 have !important on line-height in UA stylesheet
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner { // Inner padding and border oddities in FF3/4
+  padding: 0;
+  border: 0;
+}
+
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 button,
 html input[type="button"], // Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls.
 input[type="reset"],
 input[type="submit"] {
+<<<<<<< HEAD
 		-webkit-appearance: button; // Corrects inability to style clickable `input` types in iOS.
 		cursor: pointer; // Improves usability and consistency of cursor style between image-type `input` and others.
 }
+=======
+  -webkit-appearance: button; // Corrects inability to style clickable `input` types in iOS.
+  cursor: pointer; // Improves usability and consistency of cursor style between image-type `input` and others.
+}
+
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 label,
 select,
 button,
@@ -128,6 +225,7 @@ input[type="reset"],
 input[type="submit"],
 input[type="radio"],
 input[type="checkbox"] {
+<<<<<<< HEAD
 		cursor: pointer; // Improves usability and consistency of cursor style between image-type `input` and others.
 }
 input[type="search"] { // Appearance in Safari/Chrome
@@ -141,4 +239,22 @@ input[type="search"]::-webkit-search-cancel-button {
 textarea {
 	overflow: auto; // Remove vertical scrollbar in IE6-9
 	vertical-align: top; // Readability and alignment cross-browser
+=======
+  cursor: pointer; // Improves usability and consistency of cursor style between image-type `input` and others.
+}
+
+input[type="search"] { // Appearance in Safari/Chrome
+  @include box-sizing(content-box);
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; // Inner-padding issues in Chrome OSX, Safari 5
+}
+
+textarea {
+  overflow: auto; // Remove vertical scrollbar in IE6-9
+  vertical-align: top; // Readability and alignment cross-browser
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 }

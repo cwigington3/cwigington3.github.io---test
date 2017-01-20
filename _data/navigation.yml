@@ -1,6 +1,27 @@
 # Site navigation links
 
+<<<<<<< HEAD
 - title:
   url:
   excerpt:
   image:
+=======
+- title: About
+  url: /about/
+  url: https://cwigington3.github.io/about/
+
+- title: Articles
+  url: /articles/
+  url: https://cwigington3.github.io/articles/
+
+- title: Blog
+  url: /blog/
+  url: https://cwigington3.github.io/blog/
+
+#- title: Theme Setup
+#  url: /theme-setup/
+
+- title: Search
+  url: /search/
+  url: https://cwigington3.github.io/search/
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525

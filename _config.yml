@@ -1,5 +1,6 @@
 # Site wide configuration
 
+<<<<<<< HEAD
 title: "My Site"
 description: "This is a description of my awesome site."
 logo: # 120x120 px default image used for Twitter summary card
@@ -18,11 +19,30 @@ permalink: /:categories/:title/
 kramdown:
   toc_levels: 1..2
 highlighter: rouge
+=======
+title: CHW
+locale: en_US
+description: work portfolio.
+#logo: chw.png
+search: true
+url: cwigington3.github.io
+url: http://localhost:4000
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
 gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
 
+<<<<<<< HEAD
 
 # Site owner
 owner:
@@ -62,3 +82,42 @@ exclude:
   - package.json
   - spec
   - tmp
+=======
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Charles (Chad) Wigington
+  avatar: bio-photo.jpg
+  email: cwigington3@gatech.edu
+  disqus-shortname:
+  twitter: #username
+  facebook: #username
+  github: #username
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525

@@ -3,6 +3,7 @@
    ========================================================================== */
 
 .wrap {
+<<<<<<< HEAD
   @include outer-container;
 }
 
@@ -55,10 +56,48 @@
 @include media($medium) {
   .shorten {
     width: percentage(8/12);
+=======
+  margin: 0 auto;
+}
+
+/*
+   Typography
+   ========================================================================== */
+
+/* capitalize all letters */
+
+.all-caps {
+  text-transform: uppercase;
+}
+
+/* center text */
+
+.center {
+  text-align: center;
+}
+
+/* remove bullets from list items */
+
+/**
+ *  <ul class="unstyled-list">
+ *    <li>Item 1</li>
+ *    <li>Item 2</li>
+ *  </ul>
+ */
+
+.unstyled-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    list-style-type: none;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
   }
 }
 
 /*
+<<<<<<< HEAD
    Center align text
    ========================================================================== */
 
@@ -147,7 +186,87 @@
       &:hover {
         @include animation(pop .3s 0 linear);
         box-shadow: 0 0 10px rgba($black, .20);
+=======
+   Image alignment
+   ========================================================================== */
+
+/* float left */
+
+.pull-left {
+  float: left;
+  padding-right: $gutter;
+}
+
+/* float right */
+
+.pull-right {
+  float: right;
+  padding-left: $gutter;
+}
+
+/*
+   Image layout in <figure>
+   ========================================================================== */
+
+figure {
+
+  /* 2 images in a row. should be of equal height/width to maintain layout */
+
+  &.half {
+
+    @include media($large) {
+
+      img {
+        width: 47.5%;
+        float: left;
+        margin-right: 2.5%;
+        margin-bottom: 2.5%;
+      }
+
+      figcaption {
+        clear: left;
+      }
+    }
+  }
+
+  /* 3 images in a row. should be of equal height/width to maintain layout */
+
+  &.third {
+
+    @include media($large) {
+
+      img {
+        width: 30.8%;
+        float: left;
+        margin-right: 2.5%;
+        margin-bottom: 2.5%;
+      }
+
+      figcaption {
+        clear: left;
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
       }
     }
   }
 }
+<<<<<<< HEAD
+=======
+
+/*
+   No scrollbars
+   ========================================================================== */
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/*
+   Link arrow (used in link post titles)
+   ========================================================================== */
+
+.link-arrow {
+  font-weight: 100;
+  text-decoration: underline;
+  font-style: normal;
+}
+>>>>>>> ae609dcc495bea1b08056b2092ec60c839ed6525
